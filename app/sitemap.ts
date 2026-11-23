@@ -1,0 +1,12 @@
+import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site";
+
+export const dynamic = "force-static";
+
+/** only two pages */
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [
+    { url: `${SITE_URL}/`, changeFrequency: "monthly", priority: 1 },
+    { url: `${SITE_URL}/resume/`, changeFrequency: "monthly", priority: 0.8 },
+  ];
+}

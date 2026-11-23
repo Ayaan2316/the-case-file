@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- A red wax seal pressed with AB (spec §13). Rendered to favicon.ico and apple-icon.png by scripts/brand-images.mjs. -->
+  <defs>
+    <radialGradient id="wax" cx="38%" cy="32%" r="75%">
+      <stop offset="0" stop-color="#d9464b" />
+      <stop offset="0.5" stop-color="#a8161e" />
+      <stop offset="1" stop-color="#5a070c" />
+    </radialGradient>
+    <radialGradient id="press" cx="50%" cy="50%" r="50%">
+      <stop offset="0.75" stop-color="#7d0c13" stop-opacity="0" />
+      <stop offset="1" stop-color="#4a0509" stop-opacity="0.7" />
+    </radialGradient>
+  </defs>
+  <!-- The poured wax: round, with a few soft bulges where it spread. -->
+  <path fill="url(#wax)" d="M32 2.5c4.6 0 7.4 2.3 11.2 3.6 4.4 1.5 8.9 1.9 11.4 5.9 2.3 3.6 1 7.5 2 11.5 1 4.2 4.5 7 4.4 11.4-.2 4.6-3.8 7.2-5.4 11.3-1.5 4-1.1 8.5-4.9 11.1-3.6 2.4-7.9 1-12 2.2-2.4.7-4.3 2.8-6.9 2.8-4.5 0-7.3-3-11.3-4.4-4.2-1.5-8.6-1.7-11.1-5.5-2.4-3.7-1.2-7.8-2.4-11.9C6 37.6 2.6 34.9 2.8 30.4c.2-4.4 3.9-7 5.4-11 1.6-4.2 1-8.8 4.9-11.5 3.8-2.6 8.3-1.2 12.5-2.5 2.2-.7 4-2.9 6.4-2.9z" />
+  <circle cx="32" cy="32" r="21" fill="url(#press)" />
+  <circle cx="32" cy="32" r="19.6" fill="none" stroke="#5e080d" stroke-width="2.2" opacity="0.85" />
+  <circle cx="32" cy="32" r="17.2" fill="none" stroke="#e46a6e" stroke-width="0.7" opacity="0.5" />
+  <!-- AB: pressed in (a light edge above, the letter in shadow). -->
+  <text x="32.6" y="40.2" text-anchor="middle" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-weight="900" font-size="20" fill="#e8686c" opacity="0.55">AB</text>
+  <text x="32" y="39.5" text-anchor="middle" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-weight="900" font-size="20" fill="#4f060b">AB</text>
+</svg>

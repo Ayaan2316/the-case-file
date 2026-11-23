@@ -1,0 +1,334 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.overlay a,
+.overlay button {
+  pointer-events: auto;
+}
+
+.recruiter {
+  position: absolute;
+  top: max(1rem, env(safe-area-inset-top));
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch-target);
+  padding: 0 1rem;
+  border: 1px solid rgb(237 228 208 / 0.45);
+  background: rgb(13 12 10 / 0.55);
+  backdrop-filter: blur(6px);
+  color: var(--paper);
+  font-family: var(--font-mono-stack);
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.recruiter:hover {
+  border-color: var(--paper);
+}
+
+.corridor {
+  position: absolute;
+  left: clamp(1rem, 5vw, 4rem);
+  bottom: clamp(2rem, 8vh, 5rem);
+  transition: opacity 0.2s linear;
+}
+
+.caseNo {
+  margin: 0;
+  font-family: var(--font-typewriter-stack);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  letter-spacing: 0.12em;
+  color: var(--paper);
+  text-shadow: 0 2px 18px rgb(0 0 0 / 0.9);
+}
+
+.hint {
+  margin: 0.6rem 0 0;
+  font-family: var(--font-mono-stack);
+  font-size: 0.8125rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(237 228 208 / 0.75);
+}
+
+.hero {
+  position: absolute;
+  left: clamp(1rem, 5vw, 4rem);
+  bottom: clamp(2rem, 10vh, 6rem);
+  max-width: min(36rem, calc(100vw - 2rem));
+  padding: 1.25rem 1.5rem 1.4rem;
+  background: linear-gradient(90deg, rgb(8 7 6 / 0.72), rgb(8 7 6 / 0.35) 80%, transparent);
+  transition: opacity 0.2s linear;
+}
+
+.eyebrow {
+  margin: 0;
+  font-family: var(--font-mono-stack);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  color: #e46a62;
+}
+
+.headline {
+  margin: 0.4rem 0 0.6rem;
+  font-family: var(--font-headline-stack);
+  font-weight: 900;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.02;
+  color: var(--paper);
+}
+
+.lede {
+  margin: 0;
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
+  color: rgb(237 228 208 / 0.92);
+}
+
+.controls {
+  position: absolute;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dossier {
+  position: absolute;
+  left: clamp(1rem, 5vw, 4rem);
+  bottom: clamp(2rem, 8vh, 5rem);
+  max-width: min(34rem, calc(100vw - 2rem));
+  padding: 0.9rem 1.2rem 1rem;
+  background: linear-gradient(90deg, rgb(8 7 6 / 0.72), rgb(8 7 6 / 0.3) 85%, transparent);
+  transition: opacity 0.2s linear;
+}
+
+.dossierLine {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-typewriter-stack);
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  line-height: 1.45;
+  color: var(--paper);
+}
+
+.exhibit {
+  composes: dossier;
+}
+
+.exhibitTitle {
+  margin: 0.3rem 0 0;
+  font-family: var(--font-headline-stack);
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  color: var(--paper);
+}
+
+.inspect {
+  margin-top: 0.8rem;
+  min-height: var(--touch-target);
+  padding: 0 1rem;
+  border: 1px solid rgb(237 228 208 / 0.55);
+  background: rgb(193 39 45 / 0.85);
+  color: var(--paper);
+  font-family: var(--font-mono-stack);
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* more than one button under a caption (the drawer one) */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.6rem;
+  margin: 0;
+}
+
+.inspect:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 3px;
+}
+
+/* evidence room log, bags under the camera highlighted */
+.table {
+  composes: dossier;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  max-width: min(24rem, calc(100vw - 2rem));
+}
+
+.log {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.15rem;
+}
+
+.log li {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  column-gap: 0.4rem;
+  padding: 0.18rem 0 0.18rem 0.5rem;
+  border-left: 2px solid transparent;
+  color: rgb(237 228 208 / 0.55);
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.log li.inView {
+  color: var(--paper);
+  border-left-color: var(--evidence-red);
+}
+
+.item {
+  grid-row: span 2;
+  font-family: var(--font-mono-stack);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  padding-top: 0.15rem;
+}
+
+.tool {
+  font-family: var(--font-typewriter-stack);
+  font-size: clamp(0.9rem, 1.4vw, 1.02rem);
+}
+
+.note {
+  font-family: var(--font-hand-stack);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1;
+  color: var(--lamp-amber);
+  opacity: 0.85;
+}
+
+/*
+ * phone sideways is ~400px tall so the nine tools go in two columns, otherwise the list runs off
+ * both ends
+ */
+@media (max-height: 560px) {
+  .table {
+    max-width: min(44rem, calc(100vw - 2rem));
+  }
+
+  .table .exhibitTitle {
+    margin: 0.15rem 0 0;
+    font-size: 1.15rem;
+  }
+
+  .log {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1.2rem;
+    margin-top: 0.4rem;
+  }
+
+  .log li {
+    padding: 0.06rem 0 0.06rem 0.4rem;
+  }
+
+  .note {
+    font-size: 0.95rem;
+  }
+}
+
+/* touch screens tap, mouse hovers and clicks */
+.touchOnly {
+  display: none;
+}
+
+@media (pointer: coarse) {
+  .mouseOnly {
+    display: none;
+  }
+
+  .touchOnly {
+    display: inline;
+  }
+}
+
+/* interrogation: the Q/A being typed, question grey like on the paper */
+.transcript {
+  composes: dossier;
+}
+
+.question,
+.answer {
+  margin: 0;
+  font-family: var(--font-typewriter-stack);
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  line-height: 1.45;
+}
+
+.question {
+  color: rgb(237 228 208 / 0.6);
+}
+
+.answer {
+  margin-top: 0.35rem;
+  color: var(--paper);
+}
+
+/* verdict, next to the stamped case file */
+.verdict {
+  composes: dossier;
+  max-width: min(30rem, calc(100vw - 2rem));
+}
+
+.stamp {
+  margin: 0;
+  display: inline-block;
+  padding: 0.05em 0.35em 0;
+  border: 3px double var(--evidence-red);
+  color: var(--evidence-red);
+  font-family: var(--font-typewriter-stack);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  transform: rotate(-4deg);
+}
+
+.charge {
+  margin: 0.7rem 0 0;
+  font-family: var(--font-typewriter-stack);
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  color: var(--paper);
+}
+
+.sentence {
+  margin: 0.55rem 0 0;
+  font-family: var(--font-typewriter-stack);
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  line-height: 1.45;
+  color: var(--paper);
+  transition: opacity 0.2s linear;
+}
+
+.sentence span {
+  color: var(--evidence-red);
+  letter-spacing: 0.06em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .log li {
+    transition: none;
+  }
+}
+
+.dossierLine a {
+  color: var(--paper);
+  text-decoration-color: var(--evidence-red);
+  text-underline-offset: 3px;
+}
+
+.dossierLine a:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}

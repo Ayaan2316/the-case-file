@@ -1,0 +1,17 @@
+# cloudflare pages: the static export in out/ plus functions/api/tip.ts
+# deploy: pnpm build && pnpm wrangler pages deploy (preview first, then production)
+name = "case-file"
+pages_build_output_dir = "out"
+compatibility_date = "2026-10-01"
+
+# tips table (migrations/0001_tips.sql)
+[[d1_databases]]
+binding = "DB"
+database_name = "case-file-tips"
+database_id = "652dee7d-e388-4554-8b34-26a74b34ba27"
+migrations_dir = "migrations"
+
+# email goes through workers/tip-mailer (pages functions don't get send_email)
+[[services]]
+binding = "MAILER"
+service = "case-file-tip-mailer"

@@ -1,0 +1,45 @@
+/*
+ * 100lvh not the visible height. otherwise the phone address bar resizes the canvas
+ * mid scroll and every resize reallocates the buffers
+ */
+.stage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100lvh;
+  z-index: 0;
+  background: #070605;
+}
+
+.stage :global(.experience-canvas) {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+ * the scroll runway the master timeline maps 0 -> 1. it's only there for height,
+ * pointer events go through to the canvas so hover/click still works
+ */
+.scroller {
+  --runway: 1300vh;
+  position: relative;
+  height: var(--runway);
+  pointer-events: none;
+}
+
+/* phones get a shorter runway, a flick covers more of it */
+.scroller[data-short] {
+  --runway: 850vh;
+}
+
+/* reduced motion stop at progress --p (scroll range = runway minus one screen) */
+.stop {
+  position: absolute;
+  left: 0;
+  top: calc(var(--p) * (var(--runway) - 100vh));
+  width: 1px;
+  height: 1px;
+  scroll-snap-align: start;
+}

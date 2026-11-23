@@ -1,0 +1,72 @@
+.darkroom {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1.5rem;
+  background:
+    radial-gradient(ellipse at 50% 30%, rgb(150 18 12 / 0.38), transparent 60%),
+    radial-gradient(ellipse at 50% 120%, rgb(60 6 4 / 0.6), transparent 60%),
+    #0a0504;
+  transition: opacity 1.2s ease 0.2s;
+}
+
+.darkroom[data-ready="true"] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tray {
+  position: relative;
+  width: min(72vw, 640px);
+  aspect-ratio: 16 / 10;
+  padding: clamp(10px, 2vw, 18px);
+  border-radius: 6px;
+  background: linear-gradient(180deg, #1b0d0a, #120806);
+  box-shadow:
+    inset 0 2px 8px rgb(0 0 0 / 0.9),
+    0 30px 60px rgb(0 0 0 / 0.6);
+}
+
+.liquid {
+  position: absolute;
+  inset: 6px;
+  border-radius: 4px;
+  background: linear-gradient(115deg, rgb(255 60 40 / 0.07), transparent 40%, rgb(255 60 40 / 0.05) 70%, transparent);
+  animation: slosh 5s ease-in-out infinite alternate;
+}
+
+.photo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  /* paper starts blank and the image comes up as --develop goes 0 -> 1 */
+  opacity: calc(0.15 + var(--develop) * 0.85);
+  filter: sepia(1) hue-rotate(-28deg) saturate(2.4)
+    brightness(calc(2.4 - var(--develop) * 1.75))
+    contrast(calc(0.25 + var(--develop) * 0.95))
+    blur(calc((1 - var(--develop)) * 3px));
+  transition: filter 0.6s linear, opacity 0.6s linear;
+}
+
+.label {
+  margin: 0;
+  font-family: var(--font-typewriter-stack);
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  color: #e9a18f;
+}
+
+@keyframes slosh {
+  from {
+    transform: translateX(-2%);
+  }
+  to {
+    transform: translateX(2%);
+  }
+}

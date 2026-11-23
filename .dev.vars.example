@@ -1,0 +1,8 @@
+# Secrets for the Pages Function. Copy to .dev.vars for local runs (git-ignored), and set the real
+# values in the Cloudflare dashboard (Pages > case-file > Settings > Variables and Secrets).
+#
+# Cloudflare's Turnstile test secret: every token passes. The real one comes with the site key
+# (NEXT_PUBLIC_TURNSTILE_SITE_KEY at build time).
+TURNSTILE_SECRET=1x0000000000000000000000000000000AA
+# Salt for the IP hash used to rate-limit tips: any long random string.
+IP_SALT=change-me-to-a-long-random-string

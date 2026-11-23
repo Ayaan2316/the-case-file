@@ -1,0 +1,52 @@
+/* no backdrop blur, this shows on a computer that's already struggling */
+.notice {
+  position: fixed;
+  z-index: 40;
+  left: 50%;
+  bottom: 1.25rem;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem 0.9rem;
+  width: max-content;
+  max-width: calc(100vw - 2rem);
+  padding: 0.75rem 1rem;
+  border: 1px solid rgb(237 228 208 / 0.4);
+  background: rgb(13 12 10 / 0.92);
+  color: var(--paper);
+  font-family: var(--font-mono-stack);
+  font-size: 0.8125rem;
+  pointer-events: auto;
+}
+
+.notice p {
+  margin: 0;
+}
+
+.notice button {
+  min-height: var(--touch-target);
+  padding: 0 0.9rem;
+  border: 1px solid rgb(237 228 208 / 0.5);
+  background: none;
+  color: var(--paper);
+  font: inherit;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.notice button:first-of-type {
+  border-color: var(--evidence-red);
+  background: var(--evidence-red);
+}
+
+.notice button:hover {
+  border-color: var(--paper);
+}
+
+.notice button:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 3px;
+}

@@ -1,0 +1,446 @@
+/* recruiter page - typed report on paper on a dark desk */
+
+.desk {
+  min-height: 100vh;
+  padding: clamp(1rem, 4vw, 3rem) clamp(0px, 3vw, 2rem) 4rem;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgb(255 214 150 / 0.08), transparent 60%), var(--night);
+}
+
+.topNav {
+  max-width: 50rem;
+  margin: 0 auto 1rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: var(--touch-target);
+  padding: 0 0.25rem;
+  color: var(--paper);
+  font-family: var(--font-mono-stack);
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.backText {
+  text-decoration: underline;
+  text-decoration-color: rgb(237 228 208 / 0.4);
+  text-underline-offset: 0.3em;
+}
+
+.backLink:hover .backText {
+  text-decoration-color: currentColor;
+}
+
+.sheet {
+  position: relative;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 6vw, 4rem) clamp(1rem, 6vw, 4.5rem) clamp(2rem, 5vw, 3.5rem);
+  background-color: var(--paper);
+  /* paper grain, tiny inline noise tile so there's no extra request */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .16 0 0 0 0 .13 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 30% 10%, rgb(255 255 255 / 0.35), transparent 70%),
+    radial-gradient(ellipse at 90% 100%, rgb(201 166 107 / 0.25), transparent 60%);
+  color: var(--ink);
+  box-shadow:
+    0 1px 0 rgb(255 255 255 / 0.4) inset,
+    0 30px 80px -20px rgb(0 0 0 / 0.8),
+    0 6px 20px rgb(0 0 0 / 0.5);
+}
+
+/* manila tab sticking out above the sheet */
+.sheet::before {
+  content: "";
+  position: absolute;
+  top: -0.9rem;
+  left: clamp(1rem, 6vw, 4.5rem);
+  width: 9rem;
+  height: 0.9rem;
+  background: var(--manila);
+  border-radius: 6px 6px 0 0;
+}
+
+.masthead {
+  padding-bottom: 1.75rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.fileLabel,
+.eyebrow,
+.exhibitId {
+  margin: 0;
+  font-family: var(--font-mono-stack);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.name {
+  margin: 0.5rem 0 0.25rem;
+  font-family: var(--font-headline-stack);
+  font-weight: 900;
+  font-size: clamp(2.5rem, 8vw, 4.25rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.trade {
+  margin: 0.5rem 0 0;
+  font-size: 1.125rem;
+}
+
+.stamp {
+  display: inline-block;
+  margin: 1.25rem 0 0;
+  padding: 0.35rem 0.75rem 0.25rem;
+  border: 3px solid var(--evidence-red);
+  border-radius: 4px;
+  color: var(--evidence-red);
+  font-family: var(--font-typewriter-stack);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transform: rotate(-3deg);
+  transform-origin: left center;
+  mix-blend-mode: multiply;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.5rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-mono-stack);
+  font-size: 0.9375rem;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  min-height: var(--touch-target);
+  overflow-wrap: anywhere;
+}
+
+.contact a,
+.footer a,
+.links a {
+  color: var(--ink);
+  text-decoration-color: var(--evidence-red);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25em;
+}
+
+.contact a:hover,
+.footer a:hover,
+.links a:hover {
+  color: var(--evidence-red);
+}
+
+.pdf {
+  font-weight: 500;
+}
+
+.body {
+  display: block;
+}
+
+.section {
+  padding-top: 2.25rem;
+}
+
+.sectionTitle {
+  margin: 0.25rem 0 1rem;
+  font-family: var(--font-headline-stack);
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.fields {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.fields > div {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed rgb(42 34 27 / 0.3);
+}
+
+.fields dt {
+  font-family: var(--font-mono-stack);
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  padding-top: 0.15rem;
+}
+
+.fields dd {
+  margin: 0;
+}
+
+.exhibits {
+  display: grid;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.exhibit {
+  padding: 1.25rem 0 0;
+  border-top: 1px solid rgb(42 34 27 / 0.25);
+}
+
+.exhibits > li:first-child .exhibit {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.exhibitId {
+  color: var(--evidence-red);
+}
+
+.exhibitTitle {
+  margin: 0.2rem 0 0;
+  font-family: var(--font-headline-stack);
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.25;
+}
+
+.exhibitTag {
+  margin: 0.2rem 0 0;
+  font-family: var(--font-mono-stack);
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+}
+
+.exhibitSummary {
+  margin: 0.75rem 0 0;
+}
+
+.bullets {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.bullets li + li {
+  margin-top: 0.35rem;
+}
+
+.bullets li::marker {
+  color: var(--evidence-red);
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.9rem 0 0;
+}
+
+.chip {
+  padding: 0.15rem 0.5rem;
+  border: 1px solid rgb(42 34 27 / 0.45);
+  border-radius: 3px;
+  font-family: var(--font-mono-stack);
+  font-size: 0.8125rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.75rem 0 0;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tools li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgb(42 34 27 / 0.3);
+}
+
+.toolName {
+  font-weight: 700;
+}
+
+.toolNote {
+  font-family: var(--font-mono-stack);
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--ink);
+  font-family: var(--font-mono-stack);
+  font-size: 0.875rem;
+}
+
+.footer p {
+  margin: 0.25rem 0;
+}
+
+@media (max-width: 34rem) {
+  .fields > div {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+/* print: plain black on white */
+@media print {
+  @page {
+    margin: 16mm 14mm;
+  }
+
+  .desk {
+    padding: 0;
+    background: none;
+  }
+
+  .topNav,
+  .sheet::before {
+    display: none;
+  }
+
+  .sheet {
+    max-width: none;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    color: #000;
+  }
+
+  .masthead {
+    padding-bottom: 0.9rem;
+  }
+
+  .name {
+    font-size: 2.6rem;
+  }
+
+  .stamp {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    transform: none;
+  }
+
+  .contact {
+    margin-top: 0.6rem;
+  }
+
+  .contact li {
+    min-height: 0;
+  }
+
+  .contact li:has(.pdf) {
+    display: none;
+  }
+
+  .section {
+    padding-top: 1.1rem;
+  }
+
+  .sectionTitle {
+    margin: 0.1rem 0 0.5rem;
+    font-size: 1.35rem;
+  }
+
+  .fields {
+    gap: 0.3rem;
+  }
+
+  .fields > div {
+    padding-bottom: 0.3rem;
+  }
+
+  /* two columns of exhibits keeps it to ~2 pages */
+  .exhibits {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem 2rem;
+  }
+
+  .exhibit,
+  .exhibits > li:first-child .exhibit {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .exhibitTitle {
+    font-size: 1.15rem;
+  }
+
+  .exhibitSummary {
+    margin-top: 0.3rem;
+  }
+
+  .bullets {
+    margin-top: 0.35rem;
+  }
+
+  .bullets li + li {
+    margin-top: 0.1rem;
+  }
+
+  .stack {
+    margin-top: 0.4rem;
+  }
+
+  .chip {
+    padding: 0 0.35rem;
+    font-size: 0.75rem;
+  }
+
+  .tools {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 1.25rem;
+  }
+
+  .tools li {
+    padding: 0.25rem 0;
+  }
+
+  .exhibit,
+  .tools li,
+  .section > .sectionTitle {
+    break-inside: avoid;
+  }
+
+  .sectionTitle {
+    break-after: avoid;
+  }
+
+  .footer {
+    margin-top: 1.2rem;
+  }
+}

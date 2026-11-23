@@ -1,0 +1,88 @@
+/* 404 page - one sheet of paper on the dark desk */
+.desk {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 1.5rem 1rem;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgb(255 214 150 / 0.08), transparent 60%),
+    var(--night);
+}
+
+.sheet {
+  position: relative;
+  width: min(34rem, 100%);
+  padding: clamp(1.75rem, 6vw, 3rem) clamp(1.25rem, 6vw, 3rem);
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 30px 60px rgb(0 0 0 / 0.5);
+  transform: rotate(-0.6deg);
+}
+
+.eyebrow {
+  margin: 0;
+  font-family: var(--font-mono-stack);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--ink-muted);
+}
+
+.title {
+  margin: 0.4rem 0 0;
+  font-family: var(--font-headline-stack);
+  font-size: clamp(2.2rem, 7vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.stamp {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  margin: 0;
+  padding: 0.05em 0.4em 0;
+  border: 3px double var(--evidence-red);
+  color: var(--evidence-red);
+  font-family: var(--font-typewriter-stack);
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  letter-spacing: 0.1em;
+  transform: rotate(8deg);
+  opacity: 0.85;
+}
+
+.body {
+  margin: 1rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch-target);
+  color: var(--ink);
+  font-family: var(--font-typewriter-stack);
+  text-decoration-color: var(--evidence-red);
+  text-underline-offset: 4px;
+}
+
+.links a:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.case {
+  margin: 1.6rem 0 0;
+  font-family: var(--font-hand-stack);
+  font-size: 1.3rem;
+  color: var(--ink-muted);
+}

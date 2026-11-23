@@ -1,0 +1,1107 @@
+{
+  "$comment": "Every third-party asset: id, kind, source, url, author, licence, usedIn. Keep in sync with CREDITS.md.",
+  "assets": [
+    {
+      "id": "render-case-file",
+      "kind": "render",
+      "source": "Cycles render of this project's office (screenshots/blender/office_establishing.png), cropped by scripts/photos.mjs",
+      "url": null,
+      "file": "public/photos/case-file.webp",
+      "author": "Ayaan Bagawan (rendered)",
+      "licence": "Own work",
+      "usedIn": [
+        "content/case.ts exhibit C"
+      ],
+      "sha256": "922ec0255291f9040014edeabd6e24f3f6baa3dc295e6648d9675e954c98644a"
+    },
+    {
+      "id": "font-caveat",
+      "kind": "font",
+      "source": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Caveat",
+      "author": "Impallari Type",
+      "licence": "OFL-1.1",
+      "usedIn": [
+        "app/fonts.ts"
+      ]
+    },
+    {
+      "id": "font-file-caveat",
+      "kind": "font",
+      "source": "Google Fonts (github.com/google/fonts)",
+      "url": "https://github.com/google/fonts/raw/main/ofl/caveat/Caveat%5Bwght%5D.ttf",
+      "author": "Impallari Type",
+      "licence": "OFL-1.1",
+      "usedIn": [
+        "office: handwritten notes"
+      ]
+    },
+    {
+      "id": "font-file-noto-sans-kannada",
+      "kind": "font",
+      "source": "Google Fonts (github.com/google/fonts)",
+      "url": "https://github.com/google/fonts/raw/main/ofl/notosanskannada/NotoSansKannada%5Bwdth%2Cwght%5D.ttf",
+      "author": "Google",
+      "licence": "OFL-1.1",
+      "usedIn": [
+        "office: Kannada neon sign"
+      ]
+    },
+    {
+      "id": "font-file-playfair-display",
+      "kind": "font",
+      "source": "Google Fonts (github.com/google/fonts)",
+      "url": "https://github.com/google/fonts/raw/main/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf",
+      "author": "Claus Eggers Sørensen",
+      "licence": "OFL-1.1",
+      "usedIn": [
+        "corridor: gold-leaf door lettering"
+      ]
+    },
+    {
+      "id": "font-file-special-elite",
+      "kind": "font",
+      "source": "Google Fonts (github.com/google/fonts)",
+      "url": "https://github.com/google/fonts/raw/main/apache/specialelite/SpecialElite-Regular.ttf",
+      "author": "Astigmatic",
+      "licence": "Apache-2.0",
+      "usedIn": [
+        "office: typed labels on the case folder and props"
+      ]
+    },
+    {
+      "id": "font-ibm-plex-mono",
+      "kind": "font",
+      "source": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/IBM+Plex+Mono",
+      "author": "Mike Abbink, Bold Monday",
+      "licence": "OFL-1.1",
+      "usedIn": [
+        "app/fonts.ts"
+      ]
+    },
+    {
+      "id": "font-noto-sans-kannada",
+      "kind": "font",
+      "source": "Google Fonts",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+Kannada",
+      "author": "Google",
+      "licence": "OFL-1.1",
+      "usedIn": [
+        "app/fonts.ts"
+      ]
+    },
+    {
+      "id": "font-playfair-display",
+      "kind": "font",
+      "source": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Playfair+Display",
+      "author": "Claus Eggers Sørensen",
+      "licence": "OFL-1.1",
+      "usedIn": [
+        "app/fonts.ts"
+      ]
+    },
+    {
+      "id": "font-special-elite",
+      "kind": "font",
+      "source": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Special+Elite",
+      "author": "Astigmatic",
+      "licence": "Apache-2.0",
+      "usedIn": [
+        "app/fonts.ts"
+      ]
+    },
+    {
+      "id": "freesound-136778",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/davidbain/sounds/136778/",
+      "name": "Page Turn",
+      "author": "davidbain",
+      "licence": "CC0-1.0",
+      "file": "public/audio/paper-rustle.ogg",
+      "usedIn": [
+        "office: opening the folder, turning the page"
+      ]
+    },
+    {
+      "id": "freesound-210091",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/Yuval/sounds/210091/",
+      "name": "room small night",
+      "author": "Yuval",
+      "licence": "CC0-1.0",
+      "file": "public/audio/room-tone.ogg",
+      "usedIn": [
+        "office: room tone, distant street"
+      ]
+    },
+    {
+      "id": "freesound-212181",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/OwlStorm/sounds/212181/",
+      "name": "Loopable Ticking Clock",
+      "author": "OwlStorm",
+      "licence": "CC0-1.0",
+      "file": "public/audio/clock-tick.ogg",
+      "usedIn": [
+        "office: wall clock"
+      ]
+    },
+    {
+      "id": "freesound-241415",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/D.S.G./sounds/241415/",
+      "name": "Tape Hiss",
+      "author": "D.S.G.",
+      "licence": "CC0-1.0",
+      "file": "public/audio/tape-hiss.ogg",
+      "usedIn": [
+        "interrogation: the recorder running"
+      ]
+    },
+    {
+      "id": "freesound-261100",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/FrankyBoomer/sounds/261100/",
+      "name": "Jazz loop",
+      "author": "FrankyBoomer",
+      "licence": "CC0-1.0",
+      "file": "public/audio/radio-music.ogg",
+      "usedIn": [
+        "office: the valve radio's music (band-limited like a 1940s set)"
+      ]
+    },
+    {
+      "id": "freesound-267550",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/Yoyodaman234/sounds/267550/",
+      "name": "Thunder3",
+      "author": "Yoyodaman234",
+      "licence": "CC0-1.0",
+      "file": "public/audio/thunder.ogg",
+      "usedIn": [
+        "office: thunder after the lightning"
+      ]
+    },
+    {
+      "id": "freesound-273466",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/jemburyturner/sounds/273466/",
+      "name": "Big door creak",
+      "author": "jemburyturner",
+      "licence": "CC0-1.0",
+      "file": "public/audio/door-creak.ogg",
+      "usedIn": [
+        "corridor: the office door opening"
+      ]
+    },
+    {
+      "id": "freesound-318687",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/ramsamba/sounds/318687/",
+      "name": "Typewriter Bell",
+      "author": "ramsamba",
+      "licence": "CC0-1.0",
+      "file": "public/audio/typewriter-ding.ogg",
+      "usedIn": [
+        "office: the carriage bell"
+      ]
+    },
+    {
+      "id": "freesound-380138",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/yottasounds/sounds/380138/",
+      "name": "Typewriter - single key - type 1",
+      "author": "yottasounds",
+      "licence": "CC0-1.0",
+      "file": "public/audio/typewriter-key.ogg",
+      "usedIn": [
+        "office and interrogation: typewriter keys"
+      ]
+    },
+    {
+      "id": "freesound-456433",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/mycompasstv/sounds/456433/",
+      "name": "Old Rotary Phone Ringing - Western Electric Bell 500 phone",
+      "author": "mycompasstv",
+      "licence": "CC0-1.0",
+      "file": "public/audio/phone-ring.ogg",
+      "usedIn": [
+        "office: the telephone ringing (Phase 8)"
+      ]
+    },
+    {
+      "id": "freesound-470710",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/I.fekry/sounds/470710/",
+      "name": "traditional stamp",
+      "author": "I.fekry",
+      "licence": "CC0-1.0",
+      "file": "public/audio/stamp-thud.ogg",
+      "usedIn": [
+        "verdict: the GUILTY stamp"
+      ]
+    },
+    {
+      "id": "freesound-533154",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/unfa/sounds/533154/",
+      "name": "Heavy Rain Behind A Window",
+      "author": "unfa",
+      "licence": "CC0-1.0",
+      "file": "public/audio/rain-bed.ogg",
+      "usedIn": [
+        "office and corridor: the rain bed"
+      ]
+    },
+    {
+      "id": "freesound-58932",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/electrosnail/sounds/58932/",
+      "name": "radio_noises",
+      "author": "electrosnail",
+      "licence": "CC0-1.0",
+      "file": "public/audio/radio-static.ogg",
+      "usedIn": [
+        "office: tuning the radio"
+      ]
+    },
+    {
+      "id": "freesound-62306",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/thesecretmachine/sounds/62306/",
+      "name": "slow walking hard surface_1-2",
+      "author": "thesecretmachine",
+      "licence": "CC0-1.0",
+      "file": "public/audio/footsteps.ogg",
+      "usedIn": [
+        "corridor: walking to the door"
+      ]
+    },
+    {
+      "id": "freesound-648786",
+      "kind": "audio",
+      "source": "Freesound",
+      "url": "https://freesound.org/people/klau78/sounds/648786/",
+      "name": "Cars and trucks passing by on a wet road",
+      "author": "klau78",
+      "licence": "CC0-1.0",
+      "file": "public/audio/bus-pass.ogg",
+      "usedIn": [
+        "office: the bus passing in the street, heard through the window"
+      ]
+    },
+    {
+      "id": "photo-ayaan",
+      "kind": "photo",
+      "source": "Ayaan Bagawan (own photo)",
+      "url": null,
+      "file": "public/photos/ayaan.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "All rights reserved, used with the owner's permission",
+      "usedIn": [
+        "content/case.ts subject.photo"
+      ]
+    },
+    {
+      "id": "photo-bumblebee",
+      "kind": "photo",
+      "source": "Ayaan Bagawan (own photo)",
+      "url": null,
+      "file": "public/photos/bumblebee.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "All rights reserved, used with the owner's permission",
+      "usedIn": [
+        "content/case.ts exhibit A"
+      ]
+    },
+    {
+      "id": "photo-bumblebee-2",
+      "kind": "photo",
+      "source": "Ayaan Bagawan (own photo)",
+      "url": null,
+      "file": "public/photos/bumblebee-2.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "All rights reserved, used with the owner's permission",
+      "usedIn": [
+        "content/case.ts exhibit A gallery"
+      ]
+    },
+    {
+      "id": "photo-bumblebee-3",
+      "kind": "photo",
+      "source": "Ayaan Bagawan (own photo)",
+      "url": null,
+      "file": "public/photos/bumblebee-3.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "All rights reserved, used with the owner's permission",
+      "usedIn": [
+        "content/case.ts exhibit A gallery"
+      ]
+    },
+    {
+      "id": "photo-desk-pet",
+      "kind": "photo",
+      "source": "Ayaan Bagawan (own photo)",
+      "url": null,
+      "file": "public/photos/desk-pet.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "All rights reserved, used with the owner's permission",
+      "usedIn": [
+        "content/case.ts exhibit B"
+      ]
+    },
+    {
+      "id": "photo-desk-pet-2",
+      "kind": "photo",
+      "source": "Ayaan Bagawan (own photo)",
+      "url": null,
+      "file": "public/photos/desk-pet-2.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "All rights reserved, used with the owner's permission",
+      "usedIn": [
+        "content/case.ts exhibit B gallery"
+      ]
+    },
+    {
+      "id": "photo-desk-pet-3",
+      "kind": "photo",
+      "source": "Ayaan Bagawan (own photo)",
+      "url": null,
+      "file": "public/photos/desk-pet-3.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "All rights reserved, used with the owner's permission",
+      "usedIn": [
+        "content/case.ts exhibit B gallery"
+      ]
+    },
+    {
+      "id": "photo-desk-pet-4",
+      "kind": "photo",
+      "source": "Ayaan Bagawan (own photo)",
+      "url": null,
+      "file": "public/photos/desk-pet-4.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "All rights reserved, used with the owner's permission",
+      "usedIn": [
+        "content/case.ts exhibit B gallery"
+      ]
+    },
+    {
+      "id": "polyhaven-binder_notebook",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/binder_notebook",
+      "name": "Binder Notebook",
+      "author": "DaDrood",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: shelves"
+      ]
+    },
+    {
+      "id": "polyhaven-black_oak_veneer",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/black_oak_veneer",
+      "name": "Black Oak Veneer",
+      "author": "Jenelle van Heerden",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "desk, shelves"
+      ]
+    },
+    {
+      "id": "polyhaven-book_encyclopedia_set_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/book_encyclopedia_set_01",
+      "name": "Book Encyclopedia Set 01",
+      "author": "John Malcolm",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: shelves"
+      ]
+    },
+    {
+      "id": "polyhaven-brown_leather",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/brown_leather",
+      "name": "Brown Leather",
+      "author": "Rob Tuytel",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "leather details"
+      ]
+    },
+    {
+      "id": "polyhaven-cardboard_box_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/cardboard_box_01",
+      "name": "Cardboard Box 01",
+      "author": "Rahul Chaudhary",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "corridor: clutter"
+      ]
+    },
+    {
+      "id": "polyhaven-ceiling_fan",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/ceiling_fan",
+      "name": "Ceiling Fan",
+      "author": "Ulan Cabanilla",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: ceiling fan"
+      ]
+    },
+    {
+      "id": "polyhaven-circuit_board",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/circuit_board",
+      "name": "Circuit Board",
+      "author": "Benny Weimer",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "evidence room: compute board in the TensorRT bag"
+      ]
+    },
+    {
+      "id": "polyhaven-clipboard",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/clipboard",
+      "name": "Clipboard",
+      "author": "ProgrammerOnCoffee",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "evidence room: evidence log on the table"
+      ]
+    },
+    {
+      "id": "polyhaven-concrete_block_wall",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/concrete_block_wall",
+      "name": "Concrete Block Wall",
+      "author": "Charlotte Baglioni",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "evidence room walls (painted block)"
+      ]
+    },
+    {
+      "id": "polyhaven-concrete_floor_painted",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/concrete_floor_painted",
+      "name": "Concrete Floor Painted",
+      "author": "Rob Tuytel",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "evidence room floor"
+      ]
+    },
+    {
+      "id": "polyhaven-damaged_plaster",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/damaged_plaster",
+      "name": "Damaged Plaster",
+      "author": "Amal Kumar",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "corridor upper wall"
+      ]
+    },
+    {
+      "id": "polyhaven-dark_wooden_planks",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/dark_wooden_planks",
+      "name": "Dark Wooden Planks",
+      "author": "Amal Kumar",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office ceiling planks"
+      ]
+    },
+    {
+      "id": "polyhaven-decorative_book_set_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/decorative_book_set_01",
+      "name": "Decorative Book Set 01",
+      "author": "James Ray Cock",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: shelves"
+      ]
+    },
+    {
+      "id": "polyhaven-desk_lamp_arm_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/desk_lamp_arm_01",
+      "name": "Desk Lamp Arm 01",
+      "author": "Yann Kervran, Kuutti Siitonen",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: arm lamp over the electronics corner (recoloured black)"
+      ]
+    },
+    {
+      "id": "polyhaven-digital_wrist_watch",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/digital_wrist_watch",
+      "name": "Digital Wrist Watch",
+      "author": "Adrian C",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "evidence room: timing watch in the GSAP bag"
+      ]
+    },
+    {
+      "id": "polyhaven-fire_alarm",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/fire_alarm",
+      "name": "Fire Alarm",
+      "author": "Slinc",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "corridor: wall detail"
+      ]
+    },
+    {
+      "id": "polyhaven-hanging_industrial_lamp",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/hanging_industrial_lamp",
+      "name": "Hanging Industrial Lamp",
+      "author": "Kuutti Siitonen",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "evidence room: hard overhead lamp over the steel table"
+      ]
+    },
+    {
+      "id": "polyhaven-hanging_picture_frame_02",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/hanging_picture_frame_02",
+      "name": "Hanging Picture Frame 02",
+      "author": "James Ray Cock",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: wall art"
+      ]
+    },
+    {
+      "id": "polyhaven-hessian_230",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/hessian_230",
+      "name": "Hessian 230",
+      "author": "colormass, Rico Cilliers",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "radio speaker cloth"
+      ]
+    },
+    {
+      "id": "polyhaven-industrial_caged_sconce",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/industrial_caged_sconce",
+      "name": "Industrial Caged Sconce",
+      "author": "Ulan Cabanilla",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "corridor: caged wall light"
+      ]
+    },
+    {
+      "id": "polyhaven-laminate_floor_02",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/laminate_floor_02",
+      "name": "Laminate Floor 02",
+      "author": "Dario Barresi, Charlotte Baglioni",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office floor (darkened to mid-brown oak)"
+      ]
+    },
+    {
+      "id": "polyhaven-lightbulb_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/lightbulb_01",
+      "name": "Lightbulb 01",
+      "author": "Josh Dean",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "corridor: bare bulb"
+      ]
+    },
+    {
+      "id": "polyhaven-magnifying_glass_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/magnifying_glass_01",
+      "name": "Magnifying Glass 01",
+      "author": "Nazar Borodavka",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: desk"
+      ]
+    },
+    {
+      "id": "polyhaven-mid_century_lounge_chair",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "name": "Mid Century Lounge Chair",
+      "author": "Kuutti Siitonen",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: desk chair"
+      ]
+    },
+    {
+      "id": "polyhaven-modern_arm_chair_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/modern_arm_chair_01",
+      "name": "Modern Arm Chair 01",
+      "author": "Vibrant Nordic",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: reading chair by the window"
+      ]
+    },
+    {
+      "id": "polyhaven-modern_buildings_night",
+      "kind": "hdri",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/modern_buildings_night",
+      "name": "Modern Buildings Night",
+      "author": "Greg Zaal",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "city through the office window + reflections"
+      ]
+    },
+    {
+      "id": "polyhaven-modern_wooden_cabinet",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/modern_wooden_cabinet",
+      "name": "Modern Wooden Cabinet",
+      "author": "Patrik Pangerl",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: low credenza under the shelves"
+      ]
+    },
+    {
+      "id": "polyhaven-office_notepads",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/office_notepads",
+      "name": "Office Notepads",
+      "author": "Ulan Cabanilla",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: desk"
+      ]
+    },
+    {
+      "id": "polyhaven-peeling_painted_wall",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/peeling_painted_wall",
+      "name": "Peeling Painted Wall",
+      "author": "Dimitrios Savva",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "corridor lower wall"
+      ]
+    },
+    {
+      "id": "polyhaven-plank_flooring_04",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/plank_flooring_04",
+      "name": "Plank Flooring 04",
+      "author": "Dimitrios Savva",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office floor alternative"
+      ]
+    },
+    {
+      "id": "polyhaven-plastered_stone_wall",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/plastered_stone_wall",
+      "name": "Plastered Stone Wall",
+      "author": "Rob Tuytel",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office feature wall (charcoal relief)"
+      ]
+    },
+    {
+      "id": "polyhaven-plastered_wall_04",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/plastered_wall_04",
+      "name": "Plastered Wall 04",
+      "author": "Rob Tuytel",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office plaster walls"
+      ]
+    },
+    {
+      "id": "polyhaven-pliers",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/pliers",
+      "name": "Pliers",
+      "author": "PierreB3D",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: electronics corner"
+      ]
+    },
+    {
+      "id": "polyhaven-pocket_watch",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/pocket_watch",
+      "name": "Pocket Watch",
+      "author": "PierreB3D",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: desk detail"
+      ]
+    },
+    {
+      "id": "polyhaven-poly_wool_herringbone",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/poly_wool_herringbone",
+      "name": "Poly Wool Herringbone",
+      "author": "colormass, Rico Cilliers",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office rug"
+      ]
+    },
+    {
+      "id": "polyhaven-potted_plant_02",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/potted_plant_02",
+      "name": "Potted Plant 02",
+      "author": "Rico Cilliers",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: shelf plant"
+      ]
+    },
+    {
+      "id": "polyhaven-potted_plant_04",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/potted_plant_04",
+      "name": "Potted Plant 04",
+      "author": "James Ray Cock",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: desk succulent"
+      ]
+    },
+    {
+      "id": "polyhaven-pull_chain_light_socket",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/pull_chain_light_socket",
+      "name": "Pull Chain Light Socket",
+      "author": "Josh Dean",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "corridor: hanging bulb socket"
+      ]
+    },
+    {
+      "id": "polyhaven-retro_multimeter",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/retro_multimeter",
+      "name": "Retro Multimeter",
+      "author": "elli moeller",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: electronics corner"
+      ]
+    },
+    {
+      "id": "polyhaven-round_spectacles",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/round_spectacles",
+      "name": "Round Spectacles",
+      "author": "Sean Buckley",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: desk detail"
+      ]
+    },
+    {
+      "id": "polyhaven-security_camera_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/security_camera_01",
+      "name": "Security Camera 01",
+      "author": "Alexander Otterbeck, Yann Kervran",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "evidence room: CCTV in the corner"
+      ]
+    },
+    {
+      "id": "polyhaven-standing_picture_frame_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/standing_picture_frame_01",
+      "name": "Standing Picture Frame 01",
+      "author": "James Ray Cock",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: shelf frame"
+      ]
+    },
+    {
+      "id": "polyhaven-stationery_supplies",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/stationery_supplies",
+      "name": "Stationery Supplies",
+      "author": "Mateusz Sadek",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: desk pens"
+      ]
+    },
+    {
+      "id": "polyhaven-steel_frame_shelves_01",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/steel_frame_shelves_01",
+      "name": "Steel Frame Shelves 01",
+      "author": "James Ray Cock",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "evidence room: archive shelving in the dark"
+      ]
+    },
+    {
+      "id": "polyhaven-terrazzo_tiles",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/terrazzo_tiles",
+      "name": "Terrazzo Tiles",
+      "author": "Amal Kumar",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "corridor floor"
+      ]
+    },
+    {
+      "id": "polyhaven-unfinished_office_night",
+      "kind": "hdri",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/unfinished_office_night",
+      "name": "Unfinished Office Night",
+      "author": "Sergej Majboroda",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "interior reflection probe"
+      ]
+    },
+    {
+      "id": "polyhaven-volcanic_rock_tiles",
+      "kind": "texture",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/volcanic_rock_tiles",
+      "name": "Volcanic Rock Tiles",
+      "author": "Charlotte Baglioni",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office feature wall alternative"
+      ]
+    },
+    {
+      "id": "polyhaven-wall_clock",
+      "kind": "model",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/wall_clock",
+      "name": "Wall Clock",
+      "author": "PierreB3D",
+      "licence": "CC0-1.0",
+      "resolution": "2k",
+      "usedIn": [
+        "office: wall clock (real IST time in Phase 3)"
+      ]
+    },
+    {
+      "id": "demo-data-privacy",
+      "kind": "illustration",
+      "source": "Generated by scripts/demo-photos.mjs (drawn card, not a photo)",
+      "url": null,
+      "file": "public/photos/data-privacy.webp",
+      "author": "Ayaan Bagawan (generated)",
+      "licence": "Own work",
+      "usedIn": [
+        "content/case.ts exhibit E"
+      ],
+      "sha256": "d22f2f2a9ec9dabca2f25d5279e02f1c419382874cac7a37633822fd895dfdc8"
+    },
+    {
+      "id": "demo-sealed-f",
+      "kind": "illustration",
+      "source": "Generated by scripts/demo-photos.mjs (drawn card, not a photo)",
+      "url": null,
+      "file": "public/photos/sealed-f.webp",
+      "author": "Ayaan Bagawan (generated)",
+      "licence": "Own work",
+      "usedIn": [
+        "content/case.ts exhibit F"
+      ],
+      "sha256": "54357da9bb8b67ccfa5f191847fe6dd00cbc9a5e68faa70b8bdcfc5d5ef7c308"
+    },
+    {
+      "id": "demo-sealed-g",
+      "kind": "illustration",
+      "source": "Generated by scripts/demo-photos.mjs (drawn card, not a photo)",
+      "url": null,
+      "file": "public/photos/sealed-g.webp",
+      "author": "Ayaan Bagawan (generated)",
+      "licence": "Own work",
+      "usedIn": [
+        "content/case.ts exhibit G"
+      ],
+      "sha256": "0f9d2c1938129f0890c1b04cc2e2f34d23a26d6bd7f75ea91d8ffe2bed1b8288"
+    },
+    {
+      "id": "coco",
+      "kind": "illustration",
+      "source": "Ayaan Bagawan, coco-desktop-pet project (art/coco_final_home.png)",
+      "url": null,
+      "file": "public/photos/coco.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "Own work",
+      "usedIn": [
+        "content/case.ts exhibit D"
+      ]
+    },
+    {
+      "id": "coco-2",
+      "kind": "illustration",
+      "source": "Ayaan Bagawan, coco-desktop-pet project (docs/coco_final.jpg)",
+      "url": null,
+      "file": "public/photos/coco-2.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "Own work",
+      "usedIn": [
+        "content/case.ts exhibit D"
+      ]
+    },
+    {
+      "id": "coco-3",
+      "kind": "illustration",
+      "source": "Ayaan Bagawan, coco-desktop-pet project (docs/sprite_preview.png)",
+      "url": null,
+      "file": "public/photos/coco-3.webp",
+      "author": "Ayaan Bagawan",
+      "licence": "Own work",
+      "usedIn": [
+        "content/case.ts exhibit D"
+      ]
+    }
+  ]
+}

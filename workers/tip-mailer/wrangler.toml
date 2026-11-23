@@ -1,0 +1,16 @@
+# tip-mailer worker: emails each tip to me through email routing's send_email binding.
+# no public url, the pages project reaches it through its MAILER service binding
+# deploy once: pnpm wrangler deploy -c workers/tip-mailer/wrangler.toml
+name = "case-file-tip-mailer"
+main = "index.ts"
+compatibility_date = "2026-10-01"
+workers_dev = false
+preview_urls = false
+
+[[send_email]]
+name = "TIP_EMAIL"
+destination_address = "ayaan.i.bagawan@gmail.com"
+
+[vars]
+TIP_TO = "ayaan.i.bagawan@gmail.com"
+TIP_FROM = "tips@ayaanbagawan.in" # Email Routing on ayaanbagawan.in (Cloudflare) sends it
